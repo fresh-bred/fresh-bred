@@ -7,19 +7,19 @@ const PassportUse = passport.use(new LocalStrategy(function(username, password, 
   process.nextTick(function() {
     User.findOne({
       where: {
-        'username': username
-      }
+        username: username
+      },
     }).then(function(user) {
       if (!user) {
         done(null, false, {
-          message: 'Unknown user'
+          message: 'Unknown user',
         });
-      } else if (password != user.password) {
+      } else if (password !== user.password) {
         done(null, false, {
-          message: 'Invalid password'
+          message: 'Invalid password',
         });
       } else {
-        console.log(username)
+        console.log(username);
         done(null, user);
       }
     }).error(function(err) {

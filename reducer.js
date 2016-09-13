@@ -11,7 +11,6 @@ function user(state = {}, action) {
                                               email: action.payload.email,
                                               loading: false,
                                               error: null});
-
       break;
     case 'CHANGE_USER_INFO':
       return Object.assign({}, state, {

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, Link} from 'react-router'
+import {Router, Route, Link} from 'react-router';
 
 export default class Nav extends React.Component {
   render() {
@@ -14,6 +14,6 @@ export default class Nav extends React.Component {
           <li><Link to="/expense">Expenses</Link></li>
         </ul>
       </nav>
-    )
+    );
   }
 }
