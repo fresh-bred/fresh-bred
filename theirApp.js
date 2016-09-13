@@ -1,14 +1,13 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-
 import * as actionCreators from './actions/actionCreators';
 import App from './client/app';
 
 function mapStateToProps(state) {
   return {
     user: state.user,
-    expenses: state.expenses
-  }
+    expenses: state.expenses,
+  };
 }
 
 function mapDispachToProps(dispatch) {

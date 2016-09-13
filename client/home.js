@@ -10,9 +10,9 @@ class Home extends React.Component {
   render() {
     return (
       <section className="home-main">
-      <video id="bgVideo" autoPlay loop>
-        <source src="./client/coutingmoney.mp4" type="video/mp4" />
-      </video>
+        <video id="bgVideo" autoPlay loop>
+          <source src="./client/coutingmoney.mp4" type="video/mp4" />
+        </video>
         <div className="home-box">
           <h1>Bred</h1>
           <h4>Where your finances come together</h4>
@@ -22,7 +22,7 @@ class Home extends React.Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
